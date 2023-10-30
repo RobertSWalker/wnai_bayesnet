@@ -4,7 +4,7 @@ Bayesian networks and causal inferences of complexity in the Western North Ameri
 ## Paper title
 Scripts are for the manuscript titled 'Bayesian causal inference suggests institutions solve socioecological coordination problems in small-scale societies' by Hamilton MJ, RS Walker, and B Buchanan. 
 
-## Use R package bnlearn
+## Phase 1 R package bnlearn
 bnlearn (bnlearn.com) is an `R` package for learning the graphical structure of Bayesian networks, estimating their parameters and performing some useful inference. We use the boostrap feature for understanding causal structures in the WNAI data.
 
 ## Phase 1 structure learning example: bootstrap multiple network structures
@@ -22,7 +22,7 @@ strength.plot(avg.boot, boot, threshold=.8,
               layout = "dot",
               shape = "rectangle")
 ```
-## In Phase 2 use R package brms
+## Phase 2 R package brms
 brms (paul-buerkner.github.io/brms/) is an `R` package that provides an interface to fit Bayesian generalized (non-)linear multivariate multilevel models using Stan. We use it to estimate the regression coefficients of the edges in our network while adjusting for spatial and linguistic autocorrelation using Gaussian processes.
 
 ## Phase 2 parameter learning example: bayesian path model with brms
